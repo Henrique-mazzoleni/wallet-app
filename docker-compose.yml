@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  wallet-app:
+    image: henriquemazzoleni/wallet-app
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app/src/usr
