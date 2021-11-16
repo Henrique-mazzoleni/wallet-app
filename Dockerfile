@@ -3,7 +3,7 @@ WORKDIR /app/src/usr
 
 COPY package.json .
 COPY package-lock.json .
-RUN npm install
+RUN npm install && mv node_modules ../
 COPY . .
 
 CMD [ "npm", "start" ]
